@@ -11,10 +11,16 @@ class DoctorController extends Controller
 {
     public function DoctorList(){
         try {
+            // Retrieve the authenticated user's ID
             $user_id = Auth::id();
-            $doctor_data= Doctor::where('user_id', $user_id)->get();
+
+            // Retrieve doctors associated with the authenticated user
+            $doctor_data = Doctor::where('user_id', $user_id)->get();
+
+            // Return success response with doctor data
             return response()->json(['status' => 'success', 'doctor_data' => $doctor_data]);
-        }catch (Exception $e){
+        } catch (Exception $e) {
+            // Return failure response with error message
             return response()->json(['status' => 'fail', 'message' => $e->getMessage()]);
         }
     }

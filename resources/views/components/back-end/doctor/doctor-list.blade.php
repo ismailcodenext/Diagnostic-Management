@@ -9,7 +9,7 @@
     <a href="addproduct.html" class="btn btn-added"><img src="{{asset('front-end/assets/img/icons/plus.svg')}}" alt="img" class="me-1">Add New Product</a>
     </div>
     </div>
-    
+
     <div class="card">
     <div class="card-body">
     <div class="table-top">
@@ -38,7 +38,7 @@
     </ul>
     </div>
     </div>
-    
+
     <div class="card mb-0" id="filter_inputs">
     <div class="card-body pb-0">
     <div class="row">
@@ -96,9 +96,9 @@
     </div>
     </div>
     </div>
-    
+
     <div class="table-responsive">
-    <table class="table  datanew">
+    <table class="table  datanew" id="tableData">
     <thead>
     <tr>
     <th>
@@ -117,14 +117,14 @@
     <th>Action</th>
     </tr>
     </thead>
-    <tbody>
-    
+    <tbody id="tableList">
+
     </tbody>
     </table>
     </div>
     </div>
     </div>
-    
+
     </div>
     </div>
     </div>
