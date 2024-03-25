@@ -1,134 +1,134 @@
-<div class="modal animated zoomIn" id="create-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-md">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h6 class="modal-title" id="exampleModalLabel">Add Doctor</h6>
+<div class="page-wrapper">
+    <div class="content">
+        <div class="page-header">
+            <div class="page-title">
+                <h4>Product Add</h4>
+                <h6>Create new product</h6>
             </div>
-            <div class="modal-body">
-                <form id="save-form">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 p-1">
-                                <br/>
-                                <img class="w-15" id="newImg" src="{{asset('images/default.jpg')}}"/>
-                                <br/>
-                                <label class="form-label">Image</label>
-                                <input oninput="newImg.src=window.URL.createObjectURL(this.files[0])" type="file" class="form-control" id="DoctorImage">
-                                <label class="form-label">Name *</label>
-                                <input type="text" class="form-control" id="DoctorName">
-                                <label class="form-label">Email *</label>
-                                <input type="email" class="form-control" id="DoctorEmail">
-                                <label class="form-label">Specialization *</label>
-                                <input type="text" class="form-control" id="DoctorSpecialization">
-                                <label class="form-label">Degree *</label>
-                                <input type="text" class="form-control" id="DoctorDegree">
-                                <label class="form-label">Mobile *</label>
-                                <input type="text" class="form-control" id="DoctorMobile">
-                                <label class="form-label">Doctor Hospital *</label>
-                                <input type="text" class="form-control" id="DoctorHospital">
-                                <label class="form-label">Doctor Chamber Address *</label>
-                                <input type="text" class="form-control" id="DoctorChamberAddress">
-                                <label class="form-label">Doctor Registration Number *</label>
-                                <input type="text" class="form-control" id="DoctorRegistrationNumber">
-                                </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Product Name</label>
+                            <input type="text">
                         </div>
                     </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button id="modal-close" class="btn bg-gradient-primary" data-bs-dismiss="modal" aria-label="Close">Close</button>
-                    <button onclick="Save()" id="save-btn" class="btn bg-gradient-success" >Save</button>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Category</label>
+                            <select class="select">
+                                <option>Choose Category</option>
+                                <option>Computers</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Sub Category</label>
+                            <select class="select">
+                                <option>Choose Sub Category</option>
+                                <option>Fruits</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Brand</label>
+                            <select class="select">
+                                <option>Choose Brand</option>
+                                <option>Brand</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Unit</label>
+                            <select class="select">
+                                <option>Choose Unit</option>
+                                <option>Unit</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>SKU</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Minimum Qty</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Quantity</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Tax</label>
+                            <select class="select">
+                                <option>Choose Tax</option>
+                                <option>2%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Discount Type</label>
+                            <select class="select">
+                                <option>Percentage</option>
+                                <option>10%</option>
+                                <option>20%</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label>Price</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-12">
+                        <div class="form-group">
+                            <label> Status</label>
+                            <select class="select">
+                                <option>Closed</option>
+                                <option>Open</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label> Product Image</label>
+                            <div class="image-upload">
+                                <input type="file">
+                                <div class="image-uploads">
+                                    <img src="assets/img/icons/upload.svg" alt="img">
+                                    <h4>Drag and drop a file to upload</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <a href="javascript:void(0);" class="btn btn-submit me-2">Submit</a>
+                        <a href="productlist.html" class="btn btn-cancel">Cancel</a>
+                    </div>
                 </div>
             </div>
+        </div>
+
     </div>
 </div>
-<script>
-    async function Save() {
-        try {
-            let imgInput = document.getElementById('DoctorImage');
-            let DoctorName = document.getElementById('DoctorName').value;
-            let DoctorEmail = document.getElementById('DoctorEmail').value;
-            let DoctorSpecialization = document.getElementById('DoctorSpecialization').value;
-            let DoctorDegree = document.getElementById('DoctorDegree').value;
-            let DoctorMobile = document.getElementById('DoctorMobile').value;
-            let DoctorHospital = document.getElementById('DoctorHospital').value;
-            let DoctorChamberAddress = document.getElementById('DoctorChamberAddress').value;
-            let DoctorRegistrationNumber = document.getElementById('DoctorRegistrationNumber').value;
-
-
-            if (!imgInput.files || imgInput.files.length === 0) {
-                errorToast("Photo Required !");
-                return;
-            }
-
-            let imgFile = imgInput.files[0];
-
-            if (DoctorName.length === 0) {
-                errorToast("Doctor Name Required !");
-            }
-            
-            else if (DoctorEmail.length === 0) {
-                errorToast("Doctor Email Required !");
-            } 
-            
-            else if (DoctorSpecialization.length === 0) {
-                errorToast("Doctor Specialization Required !");
-            } 
-            
-            else if (DoctorDegree.length === 0) {
-                errorToast("Doctor Degree Required !");
-            } 
-            
-            else if (DoctorHospital.length === 0) {
-                errorToast("Doctor Hospital Required !");
-            } 
-            
-            else if (DoctorChamberAddress.length === 0) {
-                errorToast("Doctor ChamberAddress Required !");
-            } 
-            
-            else if (DoctorRegistrationNumber.length === 0) {
-                errorToast("Doctor RegistrationNumber Required !");
-            } 
-            
-            
-            else if (DoctorMobile.length === 0) {
-                errorToast("Doctor Mobile Required !");
-            } else {
-                document.getElementById('modal-close').click();
-                let formData = new FormData();
-                formData.append('name', DoctorName);
-                formData.append('email', DoctorEmail);
-                formData.append('specialization', DoctorSpecialization);
-                formData.append('degree', DoctorDegree);
-                formData.append('mobile', DoctorMobile);
-                formData.append('hospital', DoctorHospital);
-                formData.append('chamber_address', DoctorChamberAddress);
-                formData.append('registration_number', DoctorRegistrationNumber);
-                formData.append('img', imgFile);
-
-                const config = {
-                    headers: {
-                        'content-type': 'multipart/form-data',
-                        ...HeaderToken().headers
-                    }
-                }
-
-                showLoader();
-                let res = await axios.post("/create-doctor", formData, config);
-                hideLoader();
-
-                if (res.data['status'] === "success") {
-                    successToast(res.data['message']);
-                    document.getElementById("save-form").reset();
-                    await getList();
-                } else {
-                    errorToast(res.data['message'])
-                }
-            }
-
-        } catch (e) {
-            unauthorized(e.response.status)
-        }
-    }
-</script>

@@ -28,7 +28,6 @@ Route::view('/','pages.front-end-page.auth.login-page');
 
 /// Doctor all Api
 Route::get("/list-doctor",[DoctorController::class,'DoctorList'])->middleware('auth:sanctum');
-Route::post("/create-doctor",[DoctorController::class,'DoctorCreate'])->middleware('auth:sanctum');
 
 // ----------------------------Dashboard Route Work Ismail Start-----------------------------------------------------
 
@@ -36,8 +35,6 @@ Route::view('/patient-page','pages.back-end-page.patient-page');
 Route::view('/doctor-page','pages.back-end-page.doctor-page');
 
 // ----------------------------Dashboard Route Work Ismail End-----------------------------------------------------
-
-
 
 
 
@@ -76,7 +73,3 @@ Route::view('/dashboardSummary','pages.back-end-page.dashboard-page');
 // Dashboard API Route End
 
 // ----------------------------Dashboard Route Work Robiul End-----------------------------------------------------
-
-
-
-

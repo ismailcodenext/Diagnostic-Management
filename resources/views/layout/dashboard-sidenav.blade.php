@@ -18,15 +18,11 @@
 
 <link rel="stylesheet" href="{{asset('front-end/assets/css/style.css')}}">
 
-    <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/animate.min.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/fontawesome.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/style.css')}}" rel="stylesheet" />
-    <link href="{{asset('css/toastify.min.css')}}" rel="stylesheet" />
+
 <script src="{{asset('js/toastify-js.js')}}"></script>
 <script src="{{asset('js/axios.min.js')}}"></script>
 <script src="{{asset('js/config.js')}}"></script>
-<script src="{{asset('js/bootstrap.bundle.js')}}"></script>
+<script src="{{asset('front-end/style.css')}}"></script>
 </head>
 <body>
 
@@ -210,7 +206,8 @@ async function getProfile() {
 
 
   </script>
-<script src="{{asset('js/bootstrap.bundle.js')}}"></script>
+
+{{-- SummerNote End  --}}
 
 <script src="{{asset('front-end/assets/js/jquery-3.6.0.min.js')}}"></script>
 
@@ -225,6 +222,7 @@ async function getProfile() {
 
 <script src="{{asset('front-end/assets/plugins/apexchart/apexcharts.min.js')}}"></script>
 <script src="{{asset('front-end/assets/plugins/apexchart/chart-data.js')}}"></script>
+<script src="{{asset('js/bootstrap.bundle.js')}}"></script>
 <script src="{{asset('front-end/assets/js/script.js')}}"></script>
 </body>
 </html>
