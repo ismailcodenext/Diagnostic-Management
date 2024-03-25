@@ -8,6 +8,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="{{asset('front-end/assets/img/favicon.jpg')}}">
 
 <link rel="stylesheet" href="{{asset('front-end/assets/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{asset('front-end/assets/plugins/select2/css/select2.min.css')}}">
 
 <link rel="stylesheet" href="{{asset('front-end/assets/css/animate.css')}}">
 
@@ -19,10 +20,12 @@
 <link rel="stylesheet" href="{{asset('front-end/assets/css/style.css')}}">
 
 
+
+
+
 <script src="{{asset('js/toastify-js.js')}}"></script>
 <script src="{{asset('js/axios.min.js')}}"></script>
 <script src="{{asset('js/config.js')}}"></script>
-<script src="{{asset('front-end/style.css')}}"></script>
 </head>
 <body>
 
@@ -134,8 +137,8 @@
             <li class="submenu">
                 <a href="javascript:void(0);"><img src="{{asset('front-end/assets/img/icons/product.svg')}}" alt="img"><span> Doctor Management</span> <span class="menu-arrow"></span></a>
                 <ul>
-                    <li><a href="{{url('/doctor-page')}}">Doctor List</a></li>
-                    <li><a href="addproduct.html">Add Product</a></li>
+                    <li><a href="{{url('/doctor-list')}}">Doctor List</a></li>
+                    <li><a href="{{url('/doctor-create')}}">Add Product</a></li>
                     <li><a href="categorylist.html">Category List</a></li>
                     <li><a href="addcategory.html">Add Category</a></li>
                     <li><a href="subcategorylist.html">Sub Category List</a></li>
@@ -207,8 +210,6 @@ async function getProfile() {
 
   </script>
 
-{{-- SummerNote End  --}}
-
 <script src="{{asset('front-end/assets/js/jquery-3.6.0.min.js')}}"></script>
 
 <script src="{{asset('front-end/assets/js/feather.min.js')}}"></script>
@@ -220,9 +221,11 @@ async function getProfile() {
 
 <script src="{{asset('front-end/assets/js/bootstrap.bundle.min.js')}}"></script>
 
-<script src="{{asset('front-end/assets/plugins/apexchart/apexcharts.min.js')}}"></script>
-<script src="{{asset('front-end/assets/plugins/apexchart/chart-data.js')}}"></script>
-<script src="{{asset('js/bootstrap.bundle.js')}}"></script>
+<script src="{{asset('front-end/assets/plugins/select2/js/select2.min.js')}}"></script>
+
+<script src="{{asset('front-end/assets/plugins/sweetalert/sweetalert2.all.min.js')}}"></script>
+<script src="{{asset('front-end/assets/plugins/sweetalert/sweetalerts.min.js')}}"></script>
+
 <script src="{{asset('front-end/assets/js/script.js')}}"></script>
 </body>
 </html>

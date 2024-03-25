@@ -1,134 +1,150 @@
-{{--<div class="page-wrapper">--}}
-{{--    <div class="content">--}}
-{{--        <div class="page-header">--}}
-{{--            <div class="page-title">--}}
-{{--                <h4>Product Add</h4>--}}
-{{--                <h6>Create new product</h6>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+<div class="page-wrapper">
+    <div class="content">
+        <div class="page-header">
+            <div class="page-title">
+                <h4>Doctor Add</h4>
+            </div>
+        </div>
 
-{{--        <div class="card">--}}
-{{--            <div class="card-body">--}}
-{{--                <div class="row">--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Product Name</label>--}}
-{{--                            <input type="text">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Category</label>--}}
-{{--                            <select class="select">--}}
-{{--                                <option>Choose Category</option>--}}
-{{--                                <option>Computers</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Sub Category</label>--}}
-{{--                            <select class="select">--}}
-{{--                                <option>Choose Sub Category</option>--}}
-{{--                                <option>Fruits</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Brand</label>--}}
-{{--                            <select class="select">--}}
-{{--                                <option>Choose Brand</option>--}}
-{{--                                <option>Brand</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Unit</label>--}}
-{{--                            <select class="select">--}}
-{{--                                <option>Choose Unit</option>--}}
-{{--                                <option>Unit</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>SKU</label>--}}
-{{--                            <input type="text">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Minimum Qty</label>--}}
-{{--                            <input type="text">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Quantity</label>--}}
-{{--                            <input type="text">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Description</label>--}}
-{{--                            <textarea class="form-control"></textarea>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Tax</label>--}}
-{{--                            <select class="select">--}}
-{{--                                <option>Choose Tax</option>--}}
-{{--                                <option>2%</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Discount Type</label>--}}
-{{--                            <select class="select">--}}
-{{--                                <option>Percentage</option>--}}
-{{--                                <option>10%</option>--}}
-{{--                                <option>20%</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label>Price</label>--}}
-{{--                            <input type="text">--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-3 col-sm-6 col-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label> Status</label>--}}
-{{--                            <select class="select">--}}
-{{--                                <option>Closed</option>--}}
-{{--                                <option>Open</option>--}}
-{{--                            </select>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-12">--}}
-{{--                        <div class="form-group">--}}
-{{--                            <label> Product Image</label>--}}
-{{--                            <div class="image-upload">--}}
-{{--                                <input type="file">--}}
-{{--                                <div class="image-uploads">--}}
-{{--                                    <img src="assets/img/icons/upload.svg" alt="img">--}}
-{{--                                    <h4>Drag and drop a file to upload</h4>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-lg-12">--}}
-{{--                        <a href="javascript:void(0);" class="btn btn-submit me-2">Submit</a>--}}
-{{--                        <a href="productlist.html" class="btn btn-cancel">Cancel</a>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
+        <div class="card">
+  
+            <div class="card-body">
+                <form id="save-form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 mb-4">
+                                <img class="w-15" id="newImg" src="{{asset('images/default.jpg')}}"/>
+                                <br/>
+                                <label class="form-label">Photo</label>
+                                <input oninput="newImg.src=window.URL.createObjectURL(this.files[0])" type="file" class="form-control" id="DoctorImage">
+                                <label class="form-label">email *</label>
+                                <input type="text" class="form-control" id="DoctorEmail">
+                                <label class="form-label">Chamber Address *</label>
+                                <input type="text" class="form-control" id="ChamberAddress">
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Name *</label>
+                                <input type="text" class="form-control" id="DoctorName">
+                                <label class="form-label">Specialization*</label>
+                                <input type="text" class="form-control" id="Doctorspecialization">  
+                            </div>
+                            <div class="col-md-3 p-1">                             
+                                <label class="form-label">Degree *</label>
+                                <input type="text" class="form-control" id="DoctorDegree">
+                                <label class="form-label">Hospital *</label>
+                                <input type="text" class="form-control" id="DoctorHospital">
+                            </div>
+                                <div class="col-md-3 p-1">
+                                <label class="form-label">mobile *</label>
+                                <input type="text" class="form-control" id="DoctorMobile">
+                                <label class="form-label">registration_number *</label>
+                                <input type="text" class="form-control" id="DoctorRegistrationNumber">
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button id="modal-close" class="btn bg-gradient-primary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    <button onclick="Save()" id="save-btn" class="btn bg-gradient-success" >Save</button>
+                </div>
+            </div>
+        </div>
 
-{{--    </div>--}}
-{{--</div>--}}
+    </div>
+</div>
+<script>
+    async function Save() {
+        try {
+            let DoctorEmail = document.getElementById('DoctorEmail').value;
+            let ChamberAddress = document.getElementById('ChamberAddress').value;
+            let DoctorName = document.getElementById('DoctorName').value;
+            let Doctorspecialization = document.getElementById('Doctorspecialization').value;
+            let DoctorDegree = document.getElementById('DoctorDegree').value;
+            let DoctorHospital = document.getElementById('DoctorHospital').value;
+            let DoctorMobile = document.getElementById('DoctorMobile').value;
+            let DoctorRegistrationNumber = document.getElementById('DoctorRegistrationNumber').value;
+            let imgInput = document.getElementById('DoctorImage');
+
+            if (!imgInput.files || imgInput.files.length === 0) {
+                errorToast("Photo Required !");
+                return;
+            }
+
+            let imgFile = imgInput.files[0];
+
+            if (DoctorEmail.length === 0) {
+                errorToast("Cast Name Required !");
+            } else if (ChamberAddress.length === 0) {
+                errorToast("Cast Title Required !");
+            } 
+            
+            else if (DoctorName.length === 0) {
+                errorToast("Cast View Link Required !");
+            } 
+            
+            else if (Doctorspecialization.length === 0) {
+                errorToast("Cast View Link Required !");
+            } 
+            
+            else if (DoctorDegree.length === 0) {
+                errorToast("Cast View Link Required !");
+            } 
+            
+            else if (DoctorHospital.length === 0) {
+                errorToast("Cast View Link Required !");
+            } 
+            
+            else if (DoctorMobile.length === 0) {
+                errorToast("Cast View Link Required !");
+            } 
+            
+            else if (DoctorRegistrationNumber.length === 0) {
+                errorToast("Cast View Link Required !");
+            } 
+            
+            else {
+                document.getElementById('modal-close').click();
+                let formData = new FormData();
+                formData.append('name',DoctorName );
+                formData.append('email',DoctorEmail);
+                formData.append('registration_number',DoctorRegistrationNumber );
+                formData.append('specialization', Doctorspecialization);
+                formData.append('degree', DoctorDegree);
+                formData.append('hospital', DoctorHospital);
+                formData.append('chamber_address',ChamberAddress );
+                formData.append('mobile',DoctorMobile );
+                formData.append('img', imgFile);
+
+                const config = {
+                    headers: {
+                        'content-type': 'multipart/form-data',
+                        ...HeaderToken().headers
+                    }
+                }
+
+                showLoader();
+                let res = await axios.post("/create-doctor", formData, config);
+                hideLoader();
+
+                if (res.data['status'] === "success") {
+                    successToast(res.data['message']);
+                    document.getElementById("save-form").reset();
+                    await getList();
+                } else {
+                    errorToast(res.data['message'])
+                }
+            }
+
+        } catch (e) {
+            unauthorized(e.response.status)
+        }
+    }
+</script>
+
+
+
+
+
+
+
