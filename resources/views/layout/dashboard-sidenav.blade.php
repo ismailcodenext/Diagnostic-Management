@@ -23,7 +23,7 @@
     <div class="main-wrapper">
 
         <div class="header">
-        
+
         <div class="header-left active">
         <a href="index.html" class="logo">
         <img src="{{asset('front-end/assets/img/logo.png')}}" alt="">
@@ -34,7 +34,7 @@
         <a id="toggle_btn" href="javascript:void(0);">
         </a>
         </div>
-        
+
         <a id="mobile_btn" class="mobile_btn" href="#sidebar">
         <span class="bar-icon">
         <span></span>
@@ -42,9 +42,9 @@
         <span></span>
         </span>
         </a>
-        
+
         <ul class="nav user-menu">
-        
+
         <li class="nav-item">
         <div class="top-nav-search">
         <a href="javascript:void(0);" class="responsive-search">
@@ -61,8 +61,8 @@
         </form>
         </div>
         </li>
-        
-        
+
+
         <li class="nav-item dropdown has-arrow flag-nav">
         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button">
         <img src="assets/img/flags/us1.png" alt="" height="20">
@@ -82,7 +82,6 @@
         </a>
         </div>
         </li>
-        
         <li class="nav-item dropdown">
         <a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
         <img src="assets/img/icons/notification-bing.svg" alt="img"> <span class="badge rounded-pill">4</span>
@@ -166,7 +165,7 @@
         </div>
         </div>
         </li>
-        
+
         <li class="nav-item dropdown has-arrow main-drop">
         <a href="javascript:void(0);" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
         <span class="user-img"><img src="{{asset('front-end/assets/img/profiles/avator1.jpg')}}" alt="">
@@ -193,8 +192,8 @@
         </div>
         </li>
         </ul>
-        
-        
+
+
         <div class="dropdown mobile-user-menu">
         <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
         <div class="dropdown-menu dropdown-menu-right">
@@ -205,10 +204,10 @@
         </button>
         </div>
         </div>
-        
+
         </div>
-        
-        
+
+
         <div class="sidebar" id="sidebar">
         <div class="sidebar-inner slimscroll">
         <div id="sidebar-menu" class="sidebar-menu">
@@ -217,9 +216,9 @@
         <a href="{{url('/dashboardSummary')}}"><img src="{{asset('front-end/assets/img/icons/dashboard.svg')}}" alt="img"><span> Dashboard</span> </a>
         </li>
         <li class="submenu">
-        <a href="javascript:void(0);"><img src="{{asset('front-end/assets/img/icons/product.svg')}}" alt="img"><span> Product</span> <span class="menu-arrow"></span></a>
+        <a href="javascript:void(0);"><img src="{{asset('front-end/assets/img/icons/product.svg')}}" alt="img"><span> Patient Management</span> <span class="menu-arrow"></span></a>
         <ul>
-        <li><a href="productlist.html">Product List</a></li>
+        <li><a href="{{url('/patient-page')}}">Patient List</a></li>
         <li><a href="addproduct.html">Add Product</a></li>
         <li><a href="categorylist.html">Category List</a></li>
         <li><a href="addcategory.html">Add Category</a></li>
@@ -231,6 +230,22 @@
         <li><a href="barcode.html">Print Barcode</a></li>
         </ul>
         </li>
+            <li class="submenu">
+                <a href="javascript:void(0);"><img src="{{asset('front-end/assets/img/icons/product.svg')}}" alt="img"><span> Doctor Management</span> <span class="menu-arrow"></span></a>
+                <ul>
+                    <li><a href="{{url('/doctor-page')}}">Doctor List</a></li>
+                    <li><a href="addproduct.html">Add Product</a></li>
+                    <li><a href="categorylist.html">Category List</a></li>
+                    <li><a href="addcategory.html">Add Category</a></li>
+                    <li><a href="subcategorylist.html">Sub Category List</a></li>
+                    <li><a href="subaddcategory.html">Add Sub Category</a></li>
+                    <li><a href="brandlist.html">Brand List</a></li>
+                    <li><a href="addbrand.html">Add Brand</a></li>
+                    <li><a href="importproduct.html">Import Products</a></li>
+                    <li><a href="barcode.html">Print Barcode</a></li>
+                </ul>
+            </li>
+
         <li class="submenu">
         <a href="javascript:void(0);"><img src="{{asset('front-end/assets/img/icons/sales1.svg')}}" alt="img"><span> Sales</span> <span class="menu-arrow"></span></a>
         <ul>
@@ -250,13 +265,13 @@
         </ul>
         </li>
 
-        
+
         </ul>
         </div>
         </div>
         </div>
     </div>
-            
+
 
     <div class="content">
         @yield('content')
@@ -281,7 +296,7 @@
   </script>
 
   <script>
-    
+
 async function getProfile() {
     try {
         showLoader();

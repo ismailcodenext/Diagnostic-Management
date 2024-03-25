@@ -5,6 +5,8 @@ use App\Http\Controllers\UserController;
 
 
 // ------------Controller Work By Ismail start--------------------
+use App\Http\Controllers\DoctorController;
+
 // ------------Controller Work By Ismail End--------------------
 
 // ------------Controller Work By Robiul start--------------------
@@ -21,11 +23,16 @@ use App\Http\Controllers\UserController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-// Open Dashboard API Route 
+// Open Dashboard API Route
 Route::view('/','pages.front-end-page.auth.login-page');
 
+/// Doctor all Api
+Route::get("/list-doctor",[DoctorController::class,'DoctorList'])->middleware('auth:sanctum');
 
 // ----------------------------Dashboard Route Work Ismail Start-----------------------------------------------------
+
+Route::view('/patient-page','pages.back-end-page.patient-page');
+Route::view('/doctor-page','pages.back-end-page.doctor-page');
 
 // ----------------------------Dashboard Route Work Ismail End-----------------------------------------------------
 
