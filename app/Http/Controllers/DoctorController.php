@@ -18,4 +18,34 @@ class DoctorController extends Controller
             return response()->json(['status' => 'fail', 'message' => $e->getMessage()]);
         }
     }
+
+
+    public function DoctorCreate(Request $request)
+    {
+        try {
+            $user_id = Auth::id();
+            $img = $request->file('img');
+            $t = time();
+            $file_name = $img->getClientOriginalName();
+            $img_name = "{$user_id}-{$t}-{$file_name}";
+            $img_url = "uploads/doctor-img/{$img_name}";
+            $img->move(public_path('uploads/doctor-img'), $img_name);
+
+            Doctor::create([
+                'img_url' => $img_url,
+                'name' => $request->input('name'),
+                'email' => $request->input('email'),
+                'specialization' => $request->input('specialization'),
+                'degree' => $request->input('degree'),
+                'mobile' => $request->input('mobile'),
+                'hospital' => $request->input('hospital'),
+                'chamber_address' => $request->input('chamber_address'),
+                'registration_number' => $request->input('registration_number'),
+                'user_id' => $user_id
+            ]);
+            return response()->json(['status' => 'success', 'message' => 'Doctor Create Successful']);
+        } catch (Exception $e) {
+            return response()->json(['status' => 'fail', 'message' => $e->getMessage()]);
+        }
+    }
 }
